@@ -14,10 +14,17 @@ while(isSunk == false){
         guesses = guesses+1;
         if(guess ==location1 || guess==location2||guess==location3){
             alert("Hit!");
+            if(guess == location1){
+                location1 = null;
+            }else if(guess == location2){
+                location2 = null;
+            }else if(guess==location3){
+                location3=null;
+            }
             hit = hit + 1;
             if(hit == 3){
                 isSunk=true;
-                alert("you shank my battleship !");
+                alert("you sink my battleship !");
             }
 
         }else{

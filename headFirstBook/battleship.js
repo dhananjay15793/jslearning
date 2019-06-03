@@ -13,7 +13,7 @@ while(isSunk == false){
     }else{
         guesses = guesses+1;
         if(guess ==location1 || guess==location2||guess==location3){
-            alert("Hit!")
+            alert("Hit!");
             hit = hit + 1;
             if(hit == 3){
                 isSunk=true;
@@ -21,10 +21,10 @@ while(isSunk == false){
             }
 
         }else{
-            alert("Miss!")
+            alert("Miss!");
         }
     }
 }
 var status = "you took " + guesses + " guesses to sink battleship ,"
 +"which means your shooting accuracy was "+(3/guesses);
-alert(status)
+alert(status);

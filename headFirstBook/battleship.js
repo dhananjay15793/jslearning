@@ -1,4 +1,5 @@
-var location1=3;
+var randomNumber = Math.floor (Math.random()*5)
+var location1=randomNumber;
 var location2=4;
 var location3=5;
 var guess;
